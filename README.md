@@ -1,4 +1,4 @@
-# Furnance Temprature Monitor & Procedural Version
+# Furnace Temperature Monitor & Procedural Version
 Python-based tool for tracking glass furnace temperature and preventing operational errors...
 
 print("--- SYSTEM START: Glass Furnace Monitoring ---")
