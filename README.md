@@ -1,28 +1,22 @@
-# Furnace Temperature Monitor & Procedural Version
-Python-based tool for tracking glass furnace temperature and preventing operational errors...
+# Furnace-Monitor
 
-```
-print("--- SYSTEM START: Glass Furnace Monitoring ---")
+A Python-based tool designed for tracking glass furnace temperature and preventing operational errors in a manufacturing environment.
 
-while True:
-    user_input = input("Furnance Temprature: ")
+## Features
+- **Real-time Monitoring:** Tracks temperature inputs instantly.
+- **Automated Feedback:** Provides clear status updates (Too Low, Too Hot, or Stable).
+- **Error Handling:** Built-in protection against invalid user inputs.
+- **Simple Interface:** Easy-to-use CLI for furnace operators.
 
-    if user_input == 'STOP'.lower():
-        print("system shutting down")
-        break
-    
-    try:
-        temp = float(user_input)
-        if temp <= 1200:
-            print(f"Status: Too Low ({temp}) - Increase Heat! ")
-        elif temp >= 1500:
-            print(f"Status: Too Hot ({temp}) - Decrease Heat! ")
-        else:
-            print("Status: Stable - Don't Change Anything")
+## How to Run
+1. Ensure you have Python installed on your system.
+2. Download or clone this repository.
+3. Open your terminal or command prompt in the folder.
+4. Run the script using the following command:
 
+bash
+python temp.py
 
-    # Step 7: Except block (Agar user ghalat input de)
-    except ValueError:
-        print("WARNING! Temprature is not correct")
-print("System Stopped")
-                       ```
+## Future Improvements
+• [ ] Add data logging to save temperature history in a CSV file.
+• [ ] Implement visual alarms for critical temperature thresholds.
