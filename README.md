@@ -1,6 +1,7 @@
 # Furnace Temperature Monitor & Procedural Version
 Python-based tool for tracking glass furnace temperature and preventing operational errors...
 
+```
 print("--- SYSTEM START: Glass Furnace Monitoring ---")
 
 while True:
@@ -24,3 +25,4 @@ while True:
     except ValueError:
         print("WARNING! Temprature is not correct")
 print("System Stopped")
+                       ```
