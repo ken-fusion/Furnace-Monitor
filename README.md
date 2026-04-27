@@ -19,4 +19,5 @@ python temp.py
 
 ## Future Improvements
 • [ ] Add data logging to save temperature history in a CSV file.
+
 • [ ] Implement visual alarms for critical temperature thresholds.
